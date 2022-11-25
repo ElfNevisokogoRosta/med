@@ -47,7 +47,7 @@ body {
 }
 
 .header {
-  background-color: #91c9ce;
+  background-color: #77cdfe;
   height: 48px;
 }
 
@@ -65,7 +65,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #91c9ce;
+  background-color: #77cdfe;
   width: 100vw;
   height: 100vh;
   z-index: 2;
@@ -144,7 +144,7 @@ body {
   width: 28px;
   height: 4px;
   background-color: inherit;
-  transform: translateY(-8px);
+  transform: translateY(4px);
 }
 
 .btn__close {
