@@ -1,0 +1,73 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+  }
+  .container{
+    max-width: 380px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px; 
+  }
+.img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  @mixin list {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+  }
+  @mixin link {
+    text-decoration: none;
+    display: block;
+  }
+  @mixin btn {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  @mixin phone {
+    @media  screen and (min-width: 480px ){
+        @content;
+    }
+  }
+  @mixin tablet {
+      @media screen and (min-width: 768px ) {
+        @content;
+      }
+  }
+  @mixin desktop {
+      @media screen and (min-width: 1200px) {
+        @content;        
+      }
+  }
+@include tablet{
+  .container{
+    max-width: 768px;
+    width: 100%;
+  }
+}
+@include desktop{
+  .container{
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+.bodyblock{
+  overflow: hidden;
+}

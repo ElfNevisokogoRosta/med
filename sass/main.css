@@ -1,0 +1,145 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 380px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+.bodyblock {
+  overflow: hidden;
+}
+
+.header {
+  background-color: #6db7ff;
+  height: 48px;
+}
+
+.header__container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #6db7ff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.navigation__list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  display: block;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 200px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 4px;
+}
+.navigation__link:hover {
+  border-color: #4f59ae;
+}
+
+.navigation__element {
+  font-size: 16px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  height: inherit;
+}
+
+.navigation__btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+.x-mark {
+  transform: translateY(6px);
+  display: block;
+  width: 28px;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.x-mark::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 4px;
+  background-color: inherit;
+  transform: translateY(-8px);
+}
+
+.btn__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}/*# sourceMappingURL=main.css.map */

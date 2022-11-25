@@ -4,20 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
     <title>Житомирський медичний інститут</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <a href=""><li>Головна</li></a>
-          <a href=""><li>Структура</li></a>
-          <a href=""><li>Наука</li></a>
-          <a href=""><li>Міжнародні відносини</li></a>
-          <a href=""><li>Академія медецини майбутнього</li></a>
-          <a href=""><li>Студентське життя</li></a>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container header__container">
+        <a href="" class="header__logo">logo</a>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <a href="" class="navigation__link"
+              ><li class="navigation__element">Головна</li></a
+            >
+            <a href="" class="navigation__link"
+              ><li class="navigation__element">Структура</li></a
+            >
+            <a href="" class="navigation__link"
+              ><li class="navigation__element">Наука</li></a
+            >
+            <a href="" class="navigation__link"
+              ><li class="navigation__element">Міжнародні відносини</li></a
+            >
+            <a href="" class="navigation__link"
+              ><li class="navigation__element navigation__element--lowerfont">
+                Академія медецини
+              </li></a
+            >
+            <a href="" class="navigation__link"
+              ><li class="navigation__element">Студентське життя</li></a
+            >
+          </ul>
+          <button class="navigation__btn btn__close">X</button>
+        </nav>
+        <button class="navigation__btn btn__open">
+          <div class="x-mark"></div>
+        </button>
+      </div>
     </header>
     <main>
       <section>
