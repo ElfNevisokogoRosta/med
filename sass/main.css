@@ -162,4 +162,22 @@ body {
   width: 28px;
   height: 28px;
   fill: #000;
+}
+
+.social__list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social__icon {
+  width: 32px;
+  height: 32px;
+  fill: #6eb6ff;
+}
+.social__icon--biger {
+  width: 43px;
 }/*# sourceMappingURL=main.css.map */

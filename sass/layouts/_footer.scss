@@ -1,0 +1,15 @@
+.social__list{
+    @include list;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social__icon{
+    width: 32px;
+    height: 32px;
+    fill: $accent-color;
+    &--biger{
+        width: 43px;
+    }
+    
+}
