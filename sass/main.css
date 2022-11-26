@@ -169,6 +169,20 @@ body {
   fill: #000;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    width: 500px;
+    justify-content: none;
+  }
+  .navigation__link {
+    width: 400px;
+    padding: 8px;
+  }
+  .navigation__element {
+    width: 400px;
+    font-size: 24px;
+  }
+}
 .footer {
   background-color: #5c66c9;
   padding-top: 32px;

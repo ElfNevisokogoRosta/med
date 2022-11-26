@@ -111,3 +111,17 @@
   height: 28px;
   fill: #000;
   }
+@include tablet {
+  .navigation__list{
+    width: 500px;
+    justify-content: none;
+    }
+  .navigation__link{  
+    width: 400px;
+    padding: 8px;
+    }
+  .navigation__element{
+    width: 400px;
+    font-size: 24px;
+    }
+}    

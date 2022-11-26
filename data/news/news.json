@@ -2,7 +2,11 @@
   "news":[
     {"id": "1", 
     "title": "I'am first",
-    "img-main": "./data/images/main.jpg", 
+    "img-main": "./data/images/newsimages/main.jpg", 
+    "img-list": ["./data/images/newsimages/eyler.jpg", 
+                 "./data/images/newsimages/htoze.jpg", 
+                 "./data/images/newsimages/newTone.jpg"
+                ],
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in quia repellat nostrum nulla laborum inventore expedita non quis vitae?"}
   ]
 }
