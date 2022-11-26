@@ -32,3 +32,9 @@
   line-height: 1.33;
   color: #212121;
   }
+  @include tablet{
+    .sections__list{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+        }
+  }

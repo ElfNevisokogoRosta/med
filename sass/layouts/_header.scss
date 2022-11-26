@@ -116,7 +116,8 @@
     width: 500px;
     justify-content: none;
     }
-  .navigation__link{  
+  .navigation__link{ 
+    height: 80px; 
     width: 400px;
     padding: 8px;
     }
@@ -124,4 +125,47 @@
     width: 400px;
     font-size: 24px;
     }
+.sections__list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    }
 }    
+
+@include desktop {
+  .header{
+    height: 100px;
+  }
+  .header__logo{
+    width: 64px;
+    height: 60px;
+  }
+  .navigation__btn {
+    display: none;   
+  }
+  .header__navigation{
+    display: flex;
+    position: relative;
+    background: transparent;
+    height: auto;
+  }
+  .navigation__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+  }
+  .navigation__link{
+    width: auto;
+    border: none;
+    &:hover{
+      box-shadow: none;
+      color: aqua;
+    }
+  }
+  .navigation__element{
+    width: auto;
+    text-align: center;
+    font-size: 22px;
+  }
+}
