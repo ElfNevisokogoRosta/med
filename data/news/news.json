@@ -1,0 +1,8 @@
+{
+  "news":[
+    {"id": "1", 
+    "title": "I'am first",
+    "img-main": "./data/images/main.jpg", 
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in quia repellat nostrum nulla laborum inventore expedita non quis vitae?"}
+  ]
+}
