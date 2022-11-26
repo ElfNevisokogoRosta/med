@@ -52,3 +52,31 @@
   height: 75px;
   overflow: hidden;
   }
+  @include tablet{
+    .news__list{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .news__element{
+      width: 350px;
+      height: 350px;
+      &--last{
+        display: none;
+      }
+    }
+  }
+  @include desktop{
+    .news__list{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+    }
+    .news__element{
+      width: 370px;
+      height: 350px;
+      &--last{
+        display: flex;
+      }
+    }
+  }
