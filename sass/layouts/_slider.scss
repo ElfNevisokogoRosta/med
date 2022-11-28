@@ -1,19 +1,21 @@
-.slider__container{
-
-}
-
 .slider__top{
+    position: relative;
 display: flex;
 align-items: center;
 gap: 50px;
 }
-
 .slider__arrow{
-    height: 150px;
+    position: absolute;
+    top: 50%;
+    height: 32px;
     cursor: pointer;
     &--left{
         transform: rotate(180deg);
-    }
+        left: 0;
+            }
+            &--right{
+                right: 0;
+            }
 }
 
 .slider__frame{
