@@ -1,3 +1,4 @@
+import images1 from './json/slider.json'
 const navBtnOpen = document.querySelector('.btn__open');
 const nav = document.querySelector('.header__navigation');
 const navBtnClose = document.querySelector('.btn__close');
@@ -68,3 +69,23 @@ left.addEventListener("click", () => {
   slideNumber > 1 ? prevSlide() : getLastSlide();
   changeColor()
 });
+
+let b = 1
+const img =document.querySelector(".slider__image")
+console.log(img.src)
+const timer = setInterval(
+  ()=> {
+    if(b<=10){
+      img.src = `./slider/c${b}.jpg`;
+      b++;
+      console.log(b);
+      console.log(img.currentSrc);
+    }else{
+      b=1;
+    }
+   
+   
+  }, 9000
+)
+
+console.log(images1)
